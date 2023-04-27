@@ -1,5 +1,4 @@
-# Proje validation version mobile
-## Principes de base d'Android en Kotlin
+# Projet validation : Principes de autoformation d'Android en Kotlin
 - https://developer.android.com/courses/android-basics-kotlin/course?hl=fr
 ### Module 1 : Principes de base du Kotlin
     - Présentation du Kotlin
@@ -23,7 +22,10 @@
     - Naviguer entre les écrans
         - Activités et intents
         - Étapes du cycle de vie d'une activité
+            -Les principales méthodes de cycle de vie sont les suivantes : onCreate()onStart()onPause()onRestart()onResume()onStop()onDestroy()
     - Présentation du composant Navigation
+        - Les fragments et le composant Navigation
+        - Tester les composants Navigation
     - Composants de l'architecture
     - Exemples d'application de navigation avancée
     - Mises en page adaptatives
