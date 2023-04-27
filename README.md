@@ -8,7 +8,7 @@
     - Créer une mise en page de base
         - Un élément TextView est un composant d'interface utilisateur permettant d'afficher du texte dans votre application.
         - Un ConstraintLayout est un conteneur pour d'autres éléments d'UI.
-        Les Views doivent être fixées horizontalement et verticalement dans un conteneur ConstraintLayout.
+        - Les Views doivent être fixées horizontalement et verticalement dans un conteneur ConstraintLayout.
         - Une ImageView est un élément d'interface utilisateur permettant d'afficher des images dans votre application.
     - Ajouter un bouton à une application
 ### Module 2 : Mises en page
