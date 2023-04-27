@@ -37,11 +37,30 @@
         - Les fragments et le composant Navigation
         - Tester les composants Navigation
     - Composants de l'architecture
+        - Stocker des données dans ViewModel
+        - Utiliser LiveData avec ViewModel
     - Exemples d'application de navigation avancée
+        - ViewModel partagé entre plusieurs fragments
+        - Navigation et pile "Retour"
+        - Tester les ViewModels et LiveData
     - Mises en page adaptatives
+        - Créer une mise en page à deux volets
+        - Mises en page adaptatives
+        - Adopter des mises en page responsives pour votre interface utilisateur
 </details>
 <details> 
  <summary>Module 4 : Se connecter à Internet</summary>
+
+    - Coroutines
+        - Présentation des coroutines
+    - Récupérer des données sur Internet
+        - Présentation de HTTP/REST
+        - Récupérer des données sur Internet
+            - Les services Web courants utilisent une architecture REST
+        - Charger et afficher des images depuis Internet
+            - La bibliothèque Coil simplifie le processus de gestion des images, notamment le téléchargement, la mise en mémoire tampon, le décodage et la mise en cache dans votre application.
+        - Déboguer avec des points d'arrêt
+        - Projet :application Amphibians
 </details>
 <details> 
  <summary>Module 5 : Persistance des données</summary>
