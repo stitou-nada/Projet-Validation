@@ -3,7 +3,7 @@
 <details>
 <summary>Module 1 : Principes de base du Kotlin </summary>
 
-- Présentation du Kotlin
+    - Présentation du Kotlin
     - Créer votre première application
         - Principes de base des tests Android (tests unitaires)
     - Créer une mise en page de base
@@ -19,6 +19,7 @@
  
 <details> 
 <summary> Module 2 : Mises en page </summary>
+
     - Recevoir des entrées utilisateur dans une application : partie 1
         - Classes et héritage 
     - Recevoir des entrées utilisateur dans une application : partie 2
@@ -27,7 +28,8 @@
 </details>
 <details> 
 <summary>Module 3 : Navigation</summary>
-    - Naviguer entre les écrans
+
+     - Naviguer entre les écrans
         - Activités et intents
         - Étapes du cycle de vie d'une activité
             -Les principales méthodes de cycle de vie sont les suivantes : onCreate()onStart()onPause()onRestart()onResume()onStop()onDestroy()
