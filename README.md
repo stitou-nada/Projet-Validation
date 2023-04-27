@@ -83,4 +83,9 @@
 </details>
 <details> 
 <summary>Module 6 : WorkManage</summary>
+
+    - Planifier des tâches avec WorkManager
+        - Présentation des principes de base de WorkManager
+        - Présentation de l'implémentation de WorkManager
+        - Travail en arrière-plan avec WorkManager – Kotlin
 </details>
