@@ -64,6 +64,22 @@
 </details>
 <details> 
  <summary>Module 5 : Persistance des données</summary>
+    
+    - Présentation de SQL, Room et Flow
+        - Principes de base de SQL
+            - Structure d'une base de données relationnelle : tables, colonnes et lignes.
+            - Instructions SELECT, y compris les clauses WHERE, ORDER BY, GROUP BY et LIMIT.
+            - Insérer, mettre à jour et supprimer des lignes à l'aide de SQ.
+        - Présentation de Room et de Flow
+    - Utiliser Room pour la persistance des données
+        - Persistance des données avec Room
+            - Création d'une base de données SQLite et interaction à l'aide de la bibliothèque Room
+            - Création d'une entité, d'un DAO et de classes de base de données
+            - Utilisation d'un objet d'accès aux données (DAO, Data Access Object) pour mapper des fonctions Kotlin à des requêtes SQL
+        - Lire et mettre à jour des données avec Room
+        - Schéma de dépôt
+        - Preferences DataStore
+            - DataStore dispose d'une API totalement asynchrone basée sur des coroutines Kotlin et Flow, ce qui garantit la cohérence des données.
 </details>
 <details> 
 <summary>Module 6 : WorkManage</summary>
