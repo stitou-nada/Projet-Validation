@@ -1,4 +1,3 @@
-# Projet-Validation-VersionMobile
 # Principes de base d'Android en Kotlin
 - https://developer.android.com/courses/android-basics-kotlin/course?hl=fr
 ## Module 1 : Principes de base du Kotlin
