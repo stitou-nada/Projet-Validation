@@ -18,6 +18,8 @@ import androidx.recyclerview.widget.RecyclerView
 import prototype.todolist.R
 import prototype.todolist.data.TaskEntry
 import prototype.todolist.data.TaskRepository
+import java.text.SimpleDateFormat
+import java.util.Locale
 
 
 class TaskAdapter() : RecyclerView.Adapter<TaskAdapter.TaskViewHolder>() {
@@ -47,18 +49,25 @@ class TaskAdapter() : RecyclerView.Adapter<TaskAdapter.TaskViewHolder>() {
         val task = this.taskRepository.getAllTasks()[position]
         taskViewHolder.taskTitle.text = task.title
         taskViewHolder.taskPriority.text = task.priority.toString()
-        taskViewHolder.taskTimestamp.text = task.timestamp.toString()
 
+        //Afficher la priorité de la tâche en chaîne de caractère selon les valeurs enregistrés dans le fichier strings.xml
+        val valueRoot=taskViewHolder.itemView.context
+        val getPriorite=valueRoot.resources.getStringArray(R.array.priorities)
+        taskViewHolder.taskPriority.text= getPriorite[task.priority-1]
+        //Afficher la date de la tâche correctement
+
+        val formatter = SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault())
+        taskViewHolder.taskTimestamp.text = formatter.format(task.timestamp)
         taskViewHolder.cardView.setOnClickListener {
 
             task.title = task.title + "+"
             // Todo : supprimer ces deux lignes et voir est ce que RecyclerView continue d'afficher les updates ?
-            val repository = TaskRepository()
-            repository.save(task)
+//            val repository = TaskRepository()
+//            repository.save(task)
             this.notifyDataSetChanged()
 
             // Todo : Afficher un message aprés Update
-            // Toast.makeText(context,"Update $task", Toast.LENGTH_LONG).show()
+//             Toast.makeText(context,"Update $task", Toast.LENGTH_LONG).show()
         }
     }
 

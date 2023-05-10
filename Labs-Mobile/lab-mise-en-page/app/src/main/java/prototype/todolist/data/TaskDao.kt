@@ -9,7 +9,7 @@ class TaskDao {
         init {
             for( i in 1..10){
 
-                val task = TaskEntry(++task_count,"Task $i",1,System.currentTimeMillis())
+                val task = TaskEntry(++task_count,"Task $i",3,System.currentTimeMillis())
                 list_tasks.add(0,task)
             }
         }
