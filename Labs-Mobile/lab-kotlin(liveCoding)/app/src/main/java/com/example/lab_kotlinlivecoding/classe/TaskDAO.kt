@@ -8,7 +8,7 @@ class TaskDAO {
         init{
 
             for (i in 1..10) {
-                val task = TaskEntry(++count, title = "$i", priority = 1, time = 1234)
+                val task = TaskEntry(++count, title = "nada$i", priority = 1, time = 1234)
                 list.add(task)
             }
         }
@@ -16,5 +16,9 @@ class TaskDAO {
     }
     fun getAllTask(): MutableList<TaskEntry> {
         return TaskDAO.list
+    }
+
+    fun insert(taskEntry: TaskEntry) {
+        list.add(taskEntry)
     }
 }
