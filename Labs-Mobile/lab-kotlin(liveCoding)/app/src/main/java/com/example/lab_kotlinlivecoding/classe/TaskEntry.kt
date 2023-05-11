@@ -1,4 +1,8 @@
 package com.example.lab_kotlinlivecoding.classe
 
-class taskEntry {
-}
+data class TaskEntry(
+    val id:Int,
+    val title:String,
+    val priority:Int,
+    val time:Long?
+)
