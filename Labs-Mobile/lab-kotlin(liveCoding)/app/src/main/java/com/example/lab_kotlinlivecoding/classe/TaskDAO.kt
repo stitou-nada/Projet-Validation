@@ -21,4 +21,21 @@ class TaskDAO {
     fun insert(taskEntry: TaskEntry) {
         list.add(taskEntry)
     }
+    fun findIndexById(Id:Int): Int? {
+    val findId = list.find { it.id ==Id }
+
+            return findId!!.id
+
+
+    }
+    fun update(taskEntry: TaskEntry) {
+     val findIndex = findIndexById(taskEntry.id)
+       list[findIndex!!-1] = taskEntry
+    }
+
+    fun delete(Id: Int) {
+         val deleteTask = list.removeAt(Id-1)
+    }
+
+
 }
