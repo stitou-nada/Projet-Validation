@@ -10,7 +10,7 @@ fun main(){
     val task = TaskEntry(5, "butaina",1 , 1234)
     taskrepo.save(task)
 //  Supprimer task
-    taskrepo.delete(5)
+    taskrepo.delete(7)
 
 // Afficher task
 
