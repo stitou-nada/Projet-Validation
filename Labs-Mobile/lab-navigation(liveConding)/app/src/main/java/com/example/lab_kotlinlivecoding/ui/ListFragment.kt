@@ -2,12 +2,16 @@ package com.example.lab_kotlinlivecoding.ui
 
 import android.os.Bundle
 import android.view.LayoutInflater
+import android.view.Menu
+import android.view.MenuInflater
+import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.lab_kotlinlivecoding.R
 import com.example.lab_kotlinlivecoding.databinding.FragmentListBinding
 
 
@@ -39,7 +43,15 @@ class ListFragment : Fragment() {
             val action = ListFragmentDirections.actionListFragmentToFormFragment(taskName = 0 )
             view.findNavController().navigate(action)
         }
+
     }
+    }
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        inflater.inflate(R.menu.menu, menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return super.onOptionsItemSelected(item)
     }
 
 }
