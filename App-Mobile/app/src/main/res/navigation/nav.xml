@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/listFilmFragment"
+        android:name="com.example.gestion_film.ui.ListFilmFragment"
+        android:label="ListFilmFragment" >
+        <action
+            android:id="@+id/action_listFilmFragment_to_detailFilmFragment"
+            app:destination="@id/detailFilmFragment" />
+        <action
+            android:id="@+id/action_listFilmFragment_to_filmAvoirFragment"
+            app:destination="@id/filmAvoirFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFilmFragment"
+        android:name="com.example.gestion_film.ui.DetailFilmFragment"
+        android:label="fragment_detail_film"
+        tools:layout="@layout/fragment_detail_film" >
+        <argument
+            android:name="idFilm"
+            app:argType="integer" />
+        <action
+            android:id="@+id/action_detailFilmFragment_to_listFilmFragment"
+            app:destination="@id/listFilmFragment" />
+        <action
+            android:id="@+id/action_detailFilmFragment_to_filmAvoirFragment"
+            app:destination="@id/filmAvoirFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/filmAvoirFragment"
+        android:name="com.example.gestion_film.ui.FilmAvoirFragment"
+        android:label="FilmAvoirFragment" >
+        <action
+            android:id="@+id/action_filmAvoirFragment_to_listFilmFragment"
+            app:destination="@id/listFilmFragment" />
+        <action
+            android:id="@+id/action_filmAvoirFragment_to_detailFilmFragment"
+            app:destination="@id/detailFilmFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.gestion_film.ui.LoginFragment"
+        android:label="LoginFragment" >
+        <action
+            android:id="@+id/action_loginFragment_to_listFilmFragment"
+            app:destination="@id/listFilmFragment" />
+    </fragment>
+</navigation>
