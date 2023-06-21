@@ -24,6 +24,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::get('getAPI',[movieController::class,'getAPI']);
 Route::get('filmDetail/{film_id}',[movieController::class,'filmDetail']);
 Route::post('store',[movieController::class,'store']);
+Route::post('storeWeb',[movieController::class,'storeWeb']);
 
 Route::post("login",[loginController::class,'Login']);
 

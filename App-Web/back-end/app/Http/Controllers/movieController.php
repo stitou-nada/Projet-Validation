@@ -129,5 +129,19 @@ class movieController extends Controller
 
          return true;
     }
+    public function storeWeb(Request $request)
+    {
+    $store = new filmAvoir();
+        $store->title = $request->title;
+        $store->film_id = $request->id;
+        $store->overview = $request->overview;
+        $store->release_date = $request->release_date;
+        $store->vote_average = $request->vote_average;
+        $store->popularity = $request->popularity;
+        $store->backdrop_path = $request->backdrop_path;
+        $store->type = $request->type;
+        $store->save();
+
+    }
 
 }

@@ -6,8 +6,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
+import androidx.navigation.fragment.findNavController
 import com.example.gestion_film.Model.Film
 import com.example.gestion_film.R
 import com.example.gestion_film.databinding.FragmentDetailFilmBinding
@@ -74,7 +76,9 @@ class DetailFilmFragment : BaseFragment<FragmentDetailFilmBinding>(FragmentDetai
                         status.ERROR->showResponseError(it.message.toString())
                         status.SUCCESS->{
                             binding.apply {
-                                Log.d("cc", "listeners: hhhhhhhh")
+                                Toast.makeText(context, "film a ete add", Toast.LENGTH_SHORT).show()
+                                val action = DetailFilmFragmentDirections.actionDetailFilmFragmentToListFilmFragment()
+                                findNavController().navigate(action)
                             }
                         }
 

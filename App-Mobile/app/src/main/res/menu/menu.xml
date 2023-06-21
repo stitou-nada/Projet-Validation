@@ -5,4 +5,7 @@
     <item
         android:title="FilmAvoir"
         android:id="@+id/action_avoir" />
+    <item
+        android:title="Déconnexion"
+        android:id="@+id/deconnexion" />
 </menu>

@@ -19,9 +19,10 @@ return new class extends Migration
             $table->string('title')->nullable();
             $table->string('release_date')->nullable();
             $table->string('vote_average')->nullable();
-            $table->string('overview')->nullable();
+            $table->text('overview')->nullable();
             $table->string('popularity')->nullable();
             $table->string('backdrop_path')->nullable();
+            $table->string('type')->nullable();
             $table->timestamps();
         });
     }

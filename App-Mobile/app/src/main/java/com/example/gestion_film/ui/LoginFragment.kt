@@ -39,7 +39,7 @@ class LoginFragment :  BaseFragment<FragmentLoginBinding>(FragmentLoginBinding::
                 )
 
                 viewModel.login(user).observe(viewLifecycleOwner, Observer {
-                            Log.d("email respons", user.toString())
+
 
                     when (it.status) {
                         status.LOADING ->showProgressBar()
@@ -47,17 +47,18 @@ class LoginFragment :  BaseFragment<FragmentLoginBinding>(FragmentLoginBinding::
                         status.SUCCESS -> {
                             Log.d("email respons", it.data?.email.toString())
                             val userId =  it.data?.id
-                            val prefs = requireContext().getSharedPreferences("my_prefs", Context.MODE_PRIVATE)
-
-                            if (userId != null) {
-                                prefs.edit().putInt("userId", userId).apply()
-                            }
+                            Log.d("ee", it.data.toString())
+//                            val prefs = requireContext().getSharedPreferences("my_prefs", Context.MODE_PRIVATE)
+//                            if (userId != null) {
+//                                prefs.edit().putInt("userId", userId).apply()
+//                            }
+                            val action = LoginFragmentDirections.actionLoginFragmentToListFilmFragment()
+                            findNavController().navigate(action)
 
                             binding.email.setText("")
                             binding.password.setText("")
 
-                            val action = LoginFragmentDirections.actionLoginFragmentToListFilmFragment()
-                            findNavController().navigate(action)
+
                             Toast.makeText(context, "welcome", Toast.LENGTH_SHORT).show()
                         }
 

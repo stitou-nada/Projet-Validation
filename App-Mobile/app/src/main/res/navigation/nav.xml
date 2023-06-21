@@ -3,12 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav"
+    android:label="Login"
     app:startDestination="@id/loginFragment">
 
     <fragment
         android:id="@+id/listFilmFragment"
         android:name="com.example.gestion_film.ui.ListFilmFragment"
-        android:label="ListFilmFragment" >
+        android:label="List films">
         <action
             android:id="@+id/action_listFilmFragment_to_detailFilmFragment"
             app:destination="@id/detailFilmFragment" />
@@ -19,8 +20,8 @@
     <fragment
         android:id="@+id/detailFilmFragment"
         android:name="com.example.gestion_film.ui.DetailFilmFragment"
-        android:label="fragment_detail_film"
-        tools:layout="@layout/fragment_detail_film" >
+        android:label="Detaill film"
+        tools:layout="@layout/fragment_detail_film">
         <argument
             android:name="idFilm"
             app:argType="integer" />
@@ -34,7 +35,7 @@
     <fragment
         android:id="@+id/filmAvoirFragment"
         android:name="com.example.gestion_film.ui.FilmAvoirFragment"
-        android:label="FilmAvoirFragment" >
+        android:label="Film Avoir">
         <action
             android:id="@+id/action_filmAvoirFragment_to_listFilmFragment"
             app:destination="@id/listFilmFragment" />
@@ -45,7 +46,7 @@
     <fragment
         android:id="@+id/loginFragment"
         android:name="com.example.gestion_film.ui.LoginFragment"
-        android:label="LoginFragment" >
+        android:label="Login">
         <action
             android:id="@+id/action_loginFragment_to_listFilmFragment"
             app:destination="@id/listFilmFragment" />

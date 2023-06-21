@@ -12,4 +12,4 @@ class FilmRepo (){
     suspend fun ListAvoir()=filmDao.ListAvoir()
     suspend fun delete(Id:Int)= filmDao.delete(Id)
     suspend fun login(user: User)=filmDao.login(user)
-}
+} 

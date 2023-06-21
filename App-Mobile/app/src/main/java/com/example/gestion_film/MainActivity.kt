@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
         // Find the search menu item and set its icon
 
         //change title of menu
-       // supportActionBar?.setTitle("FOOTBALL LEAGUE")
+       // supportActionBar?.setTitle("text")
         return true
     }
 
@@ -53,6 +53,10 @@ class MainActivity : AppCompatActivity() {
         return when (item.itemId) {
             R.id.action_avoir -> {
                 navController.navigate(R.id.filmAvoirFragment)
+                true
+            }
+            R.id.deconnexion -> {
+                navController.navigate(R.id.loginFragment)
                 true
             }
 

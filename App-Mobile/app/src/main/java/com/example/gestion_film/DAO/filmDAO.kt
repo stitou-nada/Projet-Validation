@@ -7,9 +7,10 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
 class filmDAO {
+    //copanion object cree les variable statique
     companion object{
-       // private var url ="http://192.168.2.46:8000/api/"
-        private var url ="http://192.168.1.115:8000/api/"
+        private var url ="http://192.168.2.46:8000/api/"
+         // 
         private fun getRetrofit():Retrofit{
             return Retrofit.Builder()
                 .baseUrl(url)

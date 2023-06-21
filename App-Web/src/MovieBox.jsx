@@ -17,7 +17,7 @@ const MovieBox =({titel, poster_path, vote_average, release_date, overview ,id})
          
               res.data.type=e.target.value
                console.log(res.data)
-               axios.post("http://127.0.0.1:8000/api/store",res.data)
+               axios.post("http://127.0.0.1:8000/api/storeWeb",res.data)
                .then((res)=>
                        console.log('dd')
                )
