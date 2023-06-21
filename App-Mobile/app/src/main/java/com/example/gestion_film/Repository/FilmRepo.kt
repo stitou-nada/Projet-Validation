@@ -3,7 +3,7 @@ package com.example.gestion_film.Repository
 import com.example.gestion_film.DAO.filmDAO
 import com.example.gestion_film.Model.Film
 import com.example.gestion_film.Model.User
-
+// qui acceder le dao
 class FilmRepo (){
     private val filmDao = filmDAO()
     suspend fun getListFilmRepo() =filmDao.getListFilmDAO()

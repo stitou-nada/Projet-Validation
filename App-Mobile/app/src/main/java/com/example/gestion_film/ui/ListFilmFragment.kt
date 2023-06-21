@@ -39,7 +39,7 @@ class ListFilmFragment : BaseFragment<FragmentFilmListBinding>(FragmentFilmListB
                     }
                 }
                 else -> {
-                    println("sssssssssss")
+                    println("test")
                 }
             }
         })

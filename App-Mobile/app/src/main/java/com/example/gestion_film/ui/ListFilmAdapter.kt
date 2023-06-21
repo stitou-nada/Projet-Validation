@@ -52,7 +52,7 @@ class ListFilmAdapter (private val films: ArrayList<Film>, navController: NavCon
             }
         }
 
-        // this methode  used for clear data in the list and add new data for displaying
+        // cette méthode utilisée pour effacer les données dans la liste et ajouter de nouvelles données à afficher
         fun addFilm(film:List<Film>) {
             this.films.apply {
                 clear()

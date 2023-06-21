@@ -76,13 +76,13 @@ class DetailFilmFragment : BaseFragment<FragmentDetailFilmBinding>(FragmentDetai
                         status.ERROR->showResponseError(it.message.toString())
                         status.SUCCESS->{
                             binding.apply {
-                                Toast.makeText(context, "film a ete add", Toast.LENGTH_SHORT).show()
+                                Toast.makeText(context, "film a ete ajouter", Toast.LENGTH_SHORT).show()
                                 val action = DetailFilmFragmentDirections.actionDetailFilmFragmentToListFilmFragment()
                                 findNavController().navigate(action)
                             }
                         }
 
-                        else -> { print("dddddddddddd")
+                        else -> { print("test")
                         }
                     }
 

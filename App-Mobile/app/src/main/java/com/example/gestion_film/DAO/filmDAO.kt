@@ -10,7 +10,7 @@ class filmDAO {
     //copanion object cree les variable statique
     companion object{
         private var url ="http://192.168.2.46:8000/api/"
-         // 
+         // retrofit ki organize pour alle a server et donne data
         private fun getRetrofit():Retrofit{
             return Retrofit.Builder()
                 .baseUrl(url)
